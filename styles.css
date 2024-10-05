@@ -102,7 +102,7 @@ header {
 }
 
 .sidebar-icon {
-    display: none;
+    display: none !important;
 }
 
 /*hero section*/
@@ -182,11 +182,19 @@ header {
 /*destinations section*/
 
 .destinations {
-    padding: 10vh 30px;
     flex-direction: column;
     gap: 50px;
     text-align: center;
-    padding: 20vh 0;
+    padding-bottom: 10vh;
+}
+
+.destinations h2 {
+    font-size: var(--big_size);
+    margin-bottom: 50px;
+}
+
+.destinations h2 span {
+    color: var(--main_color);
 }
 
 .places {
@@ -206,7 +214,7 @@ header {
     border-radius: 20px;
 }
 
-.card-info {
+.place-card-info {
     position: absolute;
     top: 10px;
     left: 40px;
@@ -216,10 +224,11 @@ header {
     background-color: rgb(17, 17, 17 , 20%);
     padding: 20px;
     border-radius: 40px;
+    border: 1px solid var(--main_color);
 }
 
 
-.card-info h4 {
+.place-card-info h4 {
     font-size: 1.5em;
     border-bottom: 1px solid #686767;
     color: var(--main_color);
@@ -234,7 +243,42 @@ header {
 }
 
 .rating .checked {
-    background: var(--text_color_linear);
-    background-clip: text;
-    color: transparent;
+    color: var(--main_color);
+}
+
+/*reviews section*/
+.reviews {
+    flex-direction: column;
+    gap: 10vh;
+    padding: 10% 0;
+}
+.reviews h5 {
+    font-size: 2em;
+    text-align: center;
+}
+
+
+.review-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit , 300px);
+    justify-content: center;
+    gap: 50px;
+    text-align: center;
+}
+
+.review {
+    background-color: rgb(184, 184, 184 , 5%);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px grey , -1px -1px 5px grey ;
+    transition: 0.2s linear;
+}
+
+.review:hover {
+    transform: translateY(-7px);
+}
+
+.review img {
+    width: 30%;
+    border-radius: 100vh;
 }
