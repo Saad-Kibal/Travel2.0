@@ -44,7 +44,11 @@ header {
 }
 
 footer {
-    background-color: #1d1d1d;
+    background: linear-gradient(180deg,
+    rgb(0 0 0 / 1),
+    rgb(0 0 0 / 0.5) 99%,
+    rgb(0 0 0 / 0))
+    , url(./images/wallpaperflare.com_wallpaper.jpg) center / cover no-repeat;
     width: 100%;
 }
 
