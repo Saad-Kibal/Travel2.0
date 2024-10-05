@@ -55,7 +55,7 @@ footer {
 
 .container {
     max-width: 80vw;
-    padding-inline: auto;
+    padding-inline: 18px;
     margin-inline: auto;
 }
 
@@ -159,7 +159,7 @@ footer {
     color: var(--main_color);
     z-index: 2;
     position: absolute;
-    top: 700px;
+    bottom: 100px;
     animation: arrow 0.8s infinite ease-in-out;
 }
 
@@ -268,7 +268,7 @@ footer {
 /*reviews section*/
 .reviews {
     flex-direction: column;
-    gap: 10vh;
+    gap: 30px;
     padding: 10% 0;
 }
 .reviews h5 {
@@ -299,7 +299,7 @@ footer {
 
 .review img {
     width: 30%;
-    border-radius: 100vh;
+    border-radius: 15px;
 }
 
 /*footer*/
