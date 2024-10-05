@@ -9,28 +9,30 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+html {
     scroll-behavior: smooth;
 }
 
 body {
     min-height: 100vh;
+    max-width: 100vw;
     font-family: "Afacad Flux" , 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
 }
 
-a , ul {
-    list-style: none;
+a {
     text-decoration: none;
     color: var(--text_color);
 }
 
-li a:hover {
-    color: var(--main_color);
+ul {
+    list-style: none;
 }
 
-i {
-    color: var(--text_color);
+li a:hover {
+    color: var(--main_color);
 }
 
 
@@ -46,13 +48,16 @@ i {
 
 /*header section*/
 
+.header {
+    position: fixed;
+    z-index: 100;
+}
 .header-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: rgb(0, 0, 0);
     font-size: var(--p_size);
-    position: sticky;
     top: 0;
     z-index: 100;
 }
@@ -79,7 +84,7 @@ i {
     color: var(--main_color);
 }
 
-.CUS {
+.cus {
     border: 1px solid var(--main_color);
     padding: 6px 25px;
     background-color: rgba(221, 218, 10, 0.274);
@@ -87,12 +92,12 @@ i {
     transition: 0.1s linear;
 }
 
-.CUS:hover {
+.cus:hover {
     background-color: rgb(255, 255, 0);
     color: rgb(0, 0, 0);
 }
 
-.CUS:active {
+.cus:active {
     box-shadow: 1px 1px 1px 1px rgb(255, 255, 255) , -1px -1px 1px 1px rgb(255, 255, 255)  ;
 }
 
@@ -107,6 +112,11 @@ i {
     justify-content: center;
     align-items: center;
     position: relative;
+    background: linear-gradient(to top,
+    rgb(0 0 0 / 1),
+    rgb(0 0 0 / 0.5),
+    rgb(0 0 0 / 0))
+    , url(./images/hero\ hackground.jpg) center / cover no-repeat;
 }
 
 .hero-text {
